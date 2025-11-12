@@ -1,11 +1,11 @@
-# Aplicación Web
+# Aplicacion Web
 streamlit==1.31.0
 
 # Base de Datos
 sqlalchemy==2.0.25
 alembic==1.13.1
 
-# Análisis de Datos y Visualización
+# Analisis de Datos y Visualizacion
 pandas==2.2.0
 plotly==5.18.0
 

@@ -18,7 +18,7 @@ logger = setup_logger()
 
 # Configuración de la página
 st.set_page_config(
-    page_title="Clínica Veterinaria",
+    page_title="Clínica Veterinaria - Mateo Madrigal",
     page_icon="🐾",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -40,14 +40,15 @@ def initialize_database():
 db_initialized = initialize_database()
 
 # Página principal
-st.title("🐾 Sistema de Gestión de Clínica Veterinaria")
+st.title("🐾 Clínica Veterinaria de Mateo Madrigal")
+st.subheader("👋 Bienvenido, Rufino Prieto")
 
 if not db_initialized:
     st.error("Error al inicializar la base de datos. Por favor, contacte al administrador.")
     st.stop()
 
 st.markdown("""
-## Bienvenido al Sistema de Gestión
+## Sistema de Gestión Integral
 
 Este sistema permite gestionar de forma integral todos los aspectos de una clínica veterinaria:
 
@@ -73,11 +74,18 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("### Acerca de")
     st.info("""
-    **Sistema de Clínica Veterinaria**
+    **Clínica Veterinaria**
 
-    Versión: 1.0.0
+    **Desarrollado por:**
+    Mateo Madrigal
 
-    Desarrollado con:
+    **Versión:** 1.0.0
+
+    **Proyecto para:**
+    Prof. Rufino Prieto
+    Programación II
+
+    **Tecnologías:**
     - Python
     - Streamlit
     - SQLAlchemy
@@ -88,7 +96,7 @@ st.markdown("---")
 st.markdown(
     """
     <div style='text-align: center; color: gray;'>
-        © 2025 Clínica Veterinaria - Sistema de Gestión
+        © 2025 Clínica Veterinaria de Mateo Madrigal - Proyecto Programación II
     </div>
     """,
     unsafe_allow_html=True
